@@ -2,9 +2,9 @@
 <div class="sidebar-logo">
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="dark">
-    <a href="index.php?controller=dashboard&action=index" class="logo">
+    <a href="/" class="logo">
         <img
-        src="assets/img/dash-logo.png"
+        src="{{asset('assets/img/dash-logo.png')}}"
         alt="navbar brand"
         class="navbar-brand"
         height="20"
@@ -54,6 +54,11 @@
                     <li>
                         <a href="index.php?controller=order&action=index">
                         <span class="sub-item">Users List</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php?controller=category&action=create">
+                        <span class="sub-item">Create new User</span>
                         </a>
                     </li>
                 </ul>
@@ -126,12 +131,12 @@
         <div class="collapse" id="discounts">
             <ul class="nav nav-collapse">
             <li>
-                <a href="index.php?controller=discount&action=index">
+                <a href="/coupons">
                 <span class="sub-item">Coupons List</span>
                 </a>
             </li>
             <li>
-                <a href="index.php?controller=discount&action=create">
+                <a href="{{route('coupons.create')}}">
                 <span class="sub-item">Create new Coupon</span>
                 </a>
             </li>
