@@ -65,20 +65,20 @@
             </div>
         </li>
         <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#base">
+            <a data-bs-toggle="collapse" href="#product">
                 <i class="fas fa-boxes"></i>
                 <p>Products</p>
                 <span class="caret"></span>
             </a>
-            <div class="collapse" id="base">
+            <div class="collapse" id="product">
                 <ul class="nav nav-collapse">
                 <li>
-                    <a href="index.php?controller=product&action=index">
+                    <a href="{{route('products.index')}}">
                     <span class="sub-item">All Products</span>
                     </a>
                 </li>
                 <li>
-                    <a href="index.php?controller=product&action=create">
+                    <a href="{{route('products.create')}}">
                     <span class="sub-item">Create new Product</span>
                     </a>
                 </li>
@@ -102,46 +102,45 @@
         </div>
         </li>
         <li class="nav-item">
-    <a href="{{ route('categories.index') }}">
-    <i class="fas fa-list-ul"></i>
-    <p>Categories</p>
-    </a>
-
-        <div class="collapse" id="forms">
-            <ul class="nav nav-collapse">
-            <li>
-                <a href="index.php?controller=category&action=index">
-                <span class="sub-item">All Categories</span>
-                </a>
-            </li>
-            <li>
-                <a href="index.php?controller=category&action=create">
-                <span class="sub-item">Create new Category</span>
-                </a>
-            </li>
-            </ul>
-        </div>
+            <a href="{{ route('categories.index') }}">
+                <i class="fas fa-list-ul"></i>
+                <p>Categories</p>
+            </a>
+            <div class="collapse" id="forms">
+                <ul class="nav nav-collapse">
+                    <li>
+                        <a href="index.php?controller=category&action=index">
+                        <span class="sub-item">All Categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php?controller=category&action=create">
+                        <span class="sub-item">Create new Category</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </li>
         <li class="nav-item">
-        <a data-bs-toggle="collapse" href="#discounts">
-            <i class="fas fa-percentage"></i>
-            <p>Coupons</p>
-            <span class="caret"></span>
-        </a>
-        <div class="collapse" id="discounts">
-            <ul class="nav nav-collapse">
-            <li>
-                <a href="/coupons">
-                <span class="sub-item">Coupons List</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{route('coupons.create')}}">
-                <span class="sub-item">Create new Coupon</span>
-                </a>
-            </li>
-            </ul>
-        </div>
+            <a data-bs-toggle="collapse" href="#discounts">
+                <i class="fas fa-percentage"></i>
+                <p>Coupons</p>
+                <span class="caret"></span>
+            </a>
+            <div class="collapse" id="discounts">
+                <ul class="nav nav-collapse">
+                <li>
+                    <a href="/coupons">
+                    <span class="sub-item">Coupons List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('coupons.create')}}">
+                    <span class="sub-item">Create new Coupon</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
         </li>
     </ul>
     </div>
