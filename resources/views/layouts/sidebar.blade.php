@@ -102,11 +102,11 @@
         </div>
         </li>
         <li class="nav-item">
-        <a data-bs-toggle="collapse" href="#forms">
-            <i class="fas fa-list-ul"></i>
-            <p>Categories</p>
-            <span class="caret"></span>
-        </a>
+    <a href="{{ route('categories.index') }}">
+    <i class="fas fa-list-ul"></i>
+    <p>Categories</p>
+    </a>
+
         <div class="collapse" id="forms">
             <ul class="nav nav-collapse">
             <li>
