@@ -8,3 +8,9 @@ Route::get('/', function () {
 });
 
 Route::resource('coupons', CouponController::class);
+
+
+
+use App\Http\Controllers\ProductController;
+
+Route::resource('products', ProductController::class);
