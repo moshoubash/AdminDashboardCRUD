@@ -33,7 +33,7 @@
         <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#couponModal{{ $coupon->id }}">
           <i class="fas fa-trash"></i>
         </button>
-
+        <a href="{{route('coupons.show', $coupon->id)}}" class="btn btn-sm btn-warning"><i class="fas fa-info-circle"></i></a>
         <!-- Modal -->
         <div class="modal fade" id="couponModal{{ $coupon->id }}" tabindex="-1" role="dialog" aria-labelledby="couponModalLabel{{ $coupon->id }}" aria-hidden="true">
           <div class="modal-dialog" role="document">
