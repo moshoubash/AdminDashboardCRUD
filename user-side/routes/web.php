@@ -17,3 +17,6 @@ Route::get('/checkout', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+Route::get('/product', function () {
+    return view('product');
+});
